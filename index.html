@@ -2,145 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAAJ ENTERPRISE</title>
-</head>
-<body>
-
- <header>
-  <center><img src="mywebsite/logoroopdali.png" height="40%" width="10% alt="Company Logo"></center>
-  <div class="company-title">
-   <h1><center>SAJJ ENTERPRISE PRESENTS</center></h1>
-   <h2><center>ROOPDALI AYURVEDA</center></h2>
-
-
-   <h2><p> Purely Homemade Hair Care and Beauty Products
-Say goodbye to hair problems with ROOPDALI Hair Care Oil, your trusted brand for homemade hair oil and natural beauty products. Crafted with love and traditional ingredients.</h2></p>
-  </div>
-</header>
-
- 
-  <div class="marquee">
- <div class="marquee-text">
-     1, M.C Garden Road, Harendra Pally, Marwari Bagan, Dumdum , Ghughudanga, Kol 700030 , north 24pgs - Call us at 6388817181/8961045157 | Email: Roopdaliayurveda23@gmail.com
- </div>
-  </div>
-
-  
-  <div class="products">
-    
-    <div class="product-card">
-      <img src="mywebsite/logohairoil2.png" height="80%" width="60% alt="Roopdali Hair Care Oil">
-      <details>
-        <summary> Details ▼</summary>
-        <ul>
-          <li>চুল পড়া বন্ধ হয় ১৫ দিনের  মধ্যে।</li>
-          <li>নতুন চুল হয়।</li>
-          <li>চুল কালো রাখে।</li>
-         <li>চুলের রুক্ষতা দূর করে।</li>
-         <li>টাক পড়া রোধ করে।</li>
-         <li>ছোট বাচ্চা দের মাথার চুল কম থাকলে নতুন চুল হয়, কোনো পার্শ্বপ্রতিক্রিয়া ছাড়াই। </li>
-        </ul>
-      </details>
-    </div>
-
-    
-    <div class="product-card">
-      <img src="mywebsite/roopdalibodyoil.png" height="80%" width="60% alt="Roopdali Body Oil">
-      <details>
-        <summary> Details ▼</summary>
-        <ul>
-          <li>উপকরণ : নিম , হলুদ , আমন্ড এবং গোলাপ</li>
-          <li>স্কিনের রুক্ষতা কমায়।</li>
-          <li>স্কিনের গ্লো বাড়ায়।</li>
-          <li>শরীরে চুলকানী ও র‍্যাশ কমে যাবে।</li>
-        </ul>
-      </details>
-    </div>
-
-    
-    <div class="product-card">
-      <img src="mywebsite/roopdalisindoor.png" height="80%" width="60% alt="Roopdali Liquid Sindoor">
-      <details>
-        <summary> Details ▼</summary>
-        <ul>
-          <li>ঘরোয়া পদ্ধতিতে তৈরি।</li>
-          <li>কোনো পার্শ্বপ্রতিক্রিয়া নেই।</li>
-          
-        </ul>
-      </details>
-    </div>
-  </div>
-  
-<!------------------------------------------For style----------------------------------------------->
   <style>
+    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background-color: #ffffff;
+      color: #333;
     }
+
     header {
       background-color: #f8f8f8;
-      padding: 20px;
+      padding: 20px 10px;
+      text-align: center;
     }
+
     header img {
-      height: 50px;
-      vertical-align: middle;
+      max-width: 80px;
+      height: auto;
     }
-    header h1 {
-      display: inline;
-      margin-left: 10px;
-      vertical-align: middle;
-      font-size: 24px;
+
+    .company-title h1, .company-title h2 {
+      margin: 10px 0;
     }
+
+    .company-title p {
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 0 15px;
+      color: #444;
+    }
+
+    /* Marquee */
     .marquee {
       background-color: #e0e0e0;
       padding: 10px;
       overflow: hidden;
       white-space: nowrap;
     }
+
     .marquee-text {
       display: inline-block;
-      animation: marquee 10s linear infinite;
+      animation: marquee 15s linear infinite;
+      font-size: 14px;
+      color: #222;
     }
+
     @keyframes marquee {
       from { transform: translateX(100%); }
       to   { transform: translateX(-100%); }
     }
+
+    /* Products Grid */
     .products {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 20px;
       gap: 20px;
+      padding: 20px 10px;
     }
+
     .product-card {
+      background-color: #fff;
       border: 1px solid #ccc;
       border-radius: 8px;
-      width: 250px;
+      width: 90%;
+      max-width: 280px;
       padding: 10px;
       text-align: center;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .product-card img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: 6px;
     }
+
     details {
       margin-top: 10px;
+      text-align: left;
       cursor: pointer;
     }
-    footer {
-  color: red;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-  background-color: #fff0f0;
-}
 
+    summary {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    footer {
+      color: red;
+      text-align: center;
+      padding: 20px 10px;
+      font-weight: bold;
+      background-color: #fff0f0;
+      font-size: 14px;
+    }
+
+    /* Responsive Tweaks */
+    @media (min-width: 768px) {
+      header img {
+        max-width: 120px;
+      }
+
+      .company-title h1 {
+        font-size: 28px;
+      }
+
+      .company-title h2 {
+        font-size: 22px;
+      }
+
+      .company-title p {
+        font-size: 17px;
+      }
+
+      .marquee-text {
+        font-size: 15px;
+      }
+
+      footer {
+        font-size: 16px;
+      }
+    }
   </style>
-<footer>
-  For More Details Contact With Us - Mobile No: 6388817181/8961045157 Email: Roopdaliayurveda23@gmail.com </footer>
+</head>
+<body>
+
+  <header>
+    <img src="mywebsite/logoroopdali.png" alt="Company Logo">
+    <div class="company-title">
+      <h1>SAJJ ENTERPRISE PRESENTS</h1>
+      <h2>ROOPDALI AYURVEDA</h2>
+      <p>
+        Purely Homemade Hair Care and Beauty Products<br>
+        Say goodbye to hair problems with ROOPDALI Hair Care Oil, your trusted brand for homemade hair oil and natural beauty products. Crafted with love and traditional ingredients.
+      </p>
+    </div>
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-text">
+      1, M.C Garden Road, Harendra Pally, Marwari Bagan, Dumdum, Ghughudanga, Kol 700030, North 24 Pgs - Call: 6388817181 / 8961045157 | Email: Roopdaliayurveda23@gmail.com
+    </div>
+  </div>
+
+  <div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="mywebsite/logohairoil2.png" alt="Roopdali Hair Care Oil">
+      <details>
+        <summary>Details ▼</summary>
+        <ul>
+          <li>চুল পড়া বন্ধ হয় ১৫ দিনের মধ্যে।</li>
+          <li>নতুন চুল হয়।</li>
+          <li>চুল কালো রাখে।</li>
+          <li>চুলের রুক্ষতা দূর করে।</li>
+          <li>টাক পড়া রোধ করে।</li>
+          <li>ছোট বাচ্চা দের মাথার চুল কম থাকলে নতুন চুল হয়, কোনো পার্শ্বপ্রতিক্রিয়া ছাড়াই।</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="mywebsite/roopdalibodyoil.png" alt="Roopdali Body Oil">
+      <details>
+        <summary>Details ▼</summary>
+        <ul>
+          <li>উপকরণ: নিম, হলুদ, আমন্ড এবং গোলাপ</li>
+          <li>স্কিনের রুক্ষতা কমায়।</li>
+          <li>স্কিনের গ্লো বাড়ায়।</li>
+          <li>শরীরে চুলকানী ও র‍্যাশ কমে যাবে।</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="mywebsite/roopdalisindoor.png" alt="Roopdali Liquid Sindoor">
+      <details>
+        <summary>Details ▼</summary>
+        <ul>
+          <li>ঘরোয়া পদ্ধতিতে তৈরি।</li>
+          <li>কোনো পার্শ্বপ্রতিক্রিয়া নেই।</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+
+  <footer>
+    For More Details Contact With Us - Mobile No: 6388817181 / 8961045157 | Email: Roopdaliayurveda23@gmail.com
+  </footer>
+
 </body>
 </html>
+
